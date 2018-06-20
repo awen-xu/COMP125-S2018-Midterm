@@ -1,4 +1,12 @@
-// setup your IIFE (Immediately Invoked Function Expression)
+/*
+File name: app.js
+Author's name: Awen Xu
+Student Number: 300992536
+Website: Midterm
+File description: This is the JavaScript file for the midterm. 
+*/
+
+// IIFE (Immediately Invoked Function Expression)
 let app;
 (function (app) {
     "use strict";
@@ -50,6 +58,7 @@ let app;
     let email = document.getElementById("email");
     let yourMessage = document.getElementById("yourMessage");
 
+
     // Displays in the console - the form data entered by user
     function OutputFormDataToConsole() {
         console.log(`%c -----------FORM DATA----------- `, "font-weight: bold; font-size: 16px; color: maroon; background-color: rgba(0, 255, 0, 0.3);");
@@ -80,7 +89,8 @@ let app;
                 element.addEventListener("input", function () {
                     element.setCustomValidity("");
                 });
-                // when the user enters incorrect data
+
+                // when the user enters incorrect data, display the requirements statement
                 element.addEventListener("invalid", function () {
                     switch (element.id) {
                         case "firstName":
@@ -130,8 +140,9 @@ let app;
         });
     }
 
+    // start up function for organization
     function Start() {
-        console.log("App Started!")
+        console.log(`%cApp Started!`, "font-weight: bold; font-size: 16px; color: maroon; background-color: rgba(0, 255, 0, 0.3);")
 
         TourParagraphs();
 
