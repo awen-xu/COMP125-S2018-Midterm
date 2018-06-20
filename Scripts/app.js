@@ -51,7 +51,7 @@ let app;
     }
 
 
-    // Contact page fields
+    // Contact page field info are stored in these variables
     let firstName = document.getElementById("firstName");
     let lastName = document.getElementById("lastName");
     let contactNumber = document.getElementById("contactNumber");
@@ -193,6 +193,5 @@ let app;
     }
 
     window.addEventListener("load", Start);
-
 })(app || (app = {}));
 
